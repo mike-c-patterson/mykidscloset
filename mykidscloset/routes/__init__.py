@@ -1,5 +1,5 @@
-from . import clothes
+from . import closet
 
 
 def init_routes(app):
-    clothes.init(app)
+    closet.init(app)
