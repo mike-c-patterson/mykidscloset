@@ -1,4 +1,4 @@
-from mykidscloset.models import Kid
+from backend.models import Kid
 
 def init(app):
     @app.route('/hello')
