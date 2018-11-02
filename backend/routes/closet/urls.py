@@ -7,7 +7,7 @@ from .schema import kid_schema
 from .forms import KidForm
 
 def init(app):
-    @app.route('/kids-add', methods=['PUT'])
+    @app.route('/kids', methods=['PUT'])
     def put_kids():
         kid = Kid()
         form = KidForm.from_json(request.get_json())

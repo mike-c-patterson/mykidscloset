@@ -1,2 +1,8 @@
 flask_sqlalchemy
 flask_migrate
+flask_marshmallow
+marshmallow-sqlalchemy
+flask-cors
+wtforms_alchemy
+wtforms-json
+wtforms-components

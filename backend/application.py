@@ -14,7 +14,7 @@ def create_app():
     app.config.from_mapping(
         SECRET_KEY='dev',
         SQLALCHEMY_DATABASE_URI='sqlite:///mykidscloset.db',
-        ALEMBIC_DATABASE_URI='sqlite:///mykidscloset/mykidscloset.db',
+        ALEMBIC_DATABASE_URI='sqlite:///backend/mykidscloset.db',
     )
     CORS(app)
     db.init_app(app)

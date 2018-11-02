@@ -1,0 +1,21 @@
+<div *ngIf="kid">
+  <div *ngIf="kid.id">
+    <h1>{{ kid.name }}</h1>
+  </div>
+  <div *ngIf="!kid.id">
+    <h1>New Kid on the Block</h1>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label>Kid's Name:
+        <input placeholder="Enter Name" [(ngModel)]="kid.name" name="name" class="form-control"/>
+      </label>
+    </div>
+    <button (click)="save()">Save</button>
+  </form>
+</div>
+
+<ng-template #loading>
+  Loading
+</ng-template>

@@ -1,3 +1,3 @@
-set FLASK_APP=mykidscloset
+set FLASK_APP=backend
 set FLASK_ENV=development
 flask run
